@@ -9,6 +9,7 @@
     >debugging
     >easy to colab
 5.end to end chatbot project (class and obj)
+    >magic method or dunder method
     >encapsulation
     >getter and setter
     >static method

@@ -1,11 +1,31 @@
 class Chatboat:
+    
+    
+    __user_id=0
 
     def __init__(self):
+        self.__id=Chatboat.__user_id
+        Chatboat.__user_id += 1
+        self.__name="default user"
         self.username=""
         self.passwrd=""
         self.loggedin=False
         self.credentials_history={}
-        self.menu()
+        # self.menu()
+
+    def get_name(self):
+        return self.__name
+    
+    def set_name(self,new_name):
+        self.__name=new_name
+
+    @staticmethod
+    def get_id():
+        return Chatboat.__user_id
+
+    @staticmethod
+    def set_id(id):
+        Chatboat.__user_id=id
 
     def menu(self):
         user_input=input("""Welcome to chatboat !! How would you like to proceed ?-
@@ -73,3 +93,11 @@ class Chatboat:
 
 
 obj=Chatboat()
+obj2=Chatboat()
+# t=obj.get_name()
+# print(t)
+# print(obj.id)
+# print(obj2.id)
+print(obj.get_id())
+obj.set_id(9)
+print(obj2.get_id())
