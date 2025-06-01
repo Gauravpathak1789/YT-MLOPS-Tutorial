@@ -8,4 +8,7 @@
     >code reusability
     >debugging
     >easy to colab
-5.
+5.end to end chatbot project (class and obj)
+    >encapsulation
+    >getter and setter
+    >static method

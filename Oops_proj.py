@@ -19,9 +19,9 @@ class Chatboat:
         elif user_input=="2":
             self.signin()
         elif user_input=="3":
-            pass
+            self.my_post()
         elif user_input=="4":
-            pass
+            self.message_friend()
         else:
             exit()
     
@@ -49,6 +49,27 @@ class Chatboat:
         print("\n")
         self.menu()
 
+    def my_post(self):
+        if not self.loggedin:
+            print("Please sign in to write a post.")
+            self.menu()
+        else:
+            post_content = input("Write your post: ")
+            print(f"Post '{post_content}' has been written successfully!")
+        print("\n")
+        self.menu()
+    
+
+    def message_friend(self):
+        if not self.loggedin:
+            print("Please sign in to message a friend.")
+            self.menu()
+        else:
+            friend_email = input("Enter your friend's email: ")
+            message_content = input("Write your message: ")
+            print(f"Message to {friend_email} has been sent successfully!")
+        print("\n")
+        self.menu()
 
 
 obj=Chatboat()
