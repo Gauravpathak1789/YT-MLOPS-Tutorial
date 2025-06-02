@@ -10,6 +10,15 @@
     >easy to colab
 5.end to end chatbot project (class and obj)
     >magic method or dunder method
+    >self
     >encapsulation
     >getter and setter
     >static method
+
+6.Inheritance
+    >code examples
+    >why Inheritance is needed?(code reusability,parent has no acces to child class)
+    >what gets inherited-Constructor,non-private attribute ,non-private methods
+    >construvtor overloading & method overloading
+    >super keyborad(can be used only inside class,can not access variables/attributes , used only inside child class)
+    Types of Inheritance- (1.single Inheritance,2.Multilevel,Hierrarichal,Multiple,Hybrid)
